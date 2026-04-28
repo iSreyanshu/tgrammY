@@ -1,4 +1,4 @@
-# tgrammY-edge
+# tgrammY
 
 The most efficient way to run **grammY** bots on **Vercel** using the **Deno** runtime. Designed for 24/7 availability and zero cold starts.
 
