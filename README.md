@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/iSreyanshu/tgrammY/app/assets/banner.png" alt="tgrammY Banner" width="100%" />
+<img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/banner.png" alt="tgrammY Banner" width="100%" />
 
-# tgrammY
+# grammY
 
-**The fastest way to run [grammY](https://grammy.dev) Telegram bots on [Vercel](https://vercel.com) — powered by Deno Edge.**
+**The fastest way to run [grammY](https://grammy.dev) Telegram bots on [Vercel](https://vercel.com) powered by Deno Edge.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Deno](https://img.shields.io/badge/Runtime-Deno-black?style=flat-square&logo=deno)](https://deno.land)
