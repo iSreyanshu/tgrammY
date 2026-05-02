@@ -14,16 +14,16 @@
 
 ---
 
-## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="50" align="center" /> Quick Start
+## <img src="https://raw.githubusercontent.com/iSreyanshu/tgrammY/app/assets/turtle-banner.png" width="50" align="center" /> Quick Start
 
 ### 1. Project Structure
 
 Set up your Vercel project like this:
 
 ```
-your-bot/
+bot/
 ├── api/
-│   └── bot.ts        ← Your bot logic
+│   └── bot.ts        ← Your Bot logic
 └── vercel.json       ← Vercel config
 ```
 
@@ -51,13 +51,13 @@ import {
   InlineKeyboard,
 } from "https://raw.githubusercontent.com/iSreyanshu/tgrammY/app/edge.ts";
 
-const bot = createBotFromEnv(); // reads BOT_TOKEN from env
+const bot = createBotFromEnv(); // Reads BOT_TOKEN from env
 
 bot.command("start", async (ctx) => {
   const kb = new InlineKeyboard()
     .url("⭐ Star on GitHub", "https://github.com/iSreyanshu/tgrammY");
 
-  await ctx.reply("👋 Hello from Vercel Edge!", { reply_markup: kb });
+  await ctx.reply("👋 Hello from Vercel edge!", { reply_markup: kb });
 });
 
 bot.on("message:text", (ctx) => ctx.reply(`You said: ${ctx.message.text}`));
@@ -92,7 +92,7 @@ https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=https://yourapp.verc
 
 ---
 
-## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="50" align="center" /> API Reference
+## <img src="https://raw.githubusercontent.com/iSreyanshu/tgrammY/app/assets/turtle-banner.png" width="50" align="center" /> API Reference
 
 ### `createBot(token, config?)`
 
@@ -150,7 +150,7 @@ export default handleVercel(bot, {
 
 ---
 
-## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="50" align="center" /> Health Check Response
+## <img src="https://raw.githubusercontent.com/iSreyanshu/tgrammY/app/assets/turtle-banner.png" width="50" align="center" /> Health Check Response
 
 Hitting your deployment URL with a `GET` request returns:
 
@@ -158,8 +158,8 @@ Hitting your deployment URL with a `GET` request returns:
 {
   "status": "online",
   "engine": "tgrammY-edge",
-  "version": "2.0.0",
-  "message": "Function is warm and ready 🚀",
+  "version": "0.2.0",
+  "message": "Function is warm and ready!",
   "uptime": 1234.56,
   "timestamp": "2026-05-02T10:00:00.000Z"
 }
@@ -222,7 +222,7 @@ import {
 
 ---
 
-## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="50" align="center" /> Using Extra Libraries
+## <img src="https://raw.githubusercontent.com/iSreyanshu/tgrammY/app/assets/turtle-banner.png" width="50" align="center" /> Using Extra Libraries
 
 The cleanest way to add extra Deno libraries is the **`deps.ts` pattern** — one central file for all your imports.
 
@@ -292,22 +292,6 @@ import { createBotFromEnv, handleVercel, Menu, z, axios } from "../deps.ts";
 
 ## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="50" align="center" /> Example Files
 
-- [`example/deps.ts`](example/deps.ts) — Central dependency file (start here)
-- [`example/api/bot.ts`](example/api/bot.ts) — Full example bot
-- [`example/vercel.json`](example/vercel.json) — Vercel configuration
-
----
-
-## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="50" align="center" /> License
-
-[MIT](LICENSE) © [iSreyanshu](https://github.com/iSreyanshu)
-
----
-
-<div align="center">
-
-Made with ❤️ for the Telegram bot community
-
-**[⭐ Star this repo](https://github.com/iSreyanshu/tgrammY)** if it helped you!
-
-</div>
+- [`example/deps.ts`](example/deps.ts) - Central dependency file (start here)
+- [`example/api/bot.ts`](example/api/bot.ts) - Full example bot
+- [`example/vercel.json`](example/vercel.json) - Vercel configuration
