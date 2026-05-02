@@ -175,7 +175,7 @@ Vercel serverless functions sleep after inactivity. Keep your bot always respons
 2. Create a new cron job pointing to `https://yourapp.vercel.app/`
 3. Set interval to **every 5 minutes**
 
-The built-in `GET` handler responds with `200 OK` — keeping the function warm without triggering any Telegram errors.
+The built-in `GET` handler responds with `200 OK` - keeping the function warm without triggering any Telegram errors.
 
 ---
 
@@ -183,15 +183,15 @@ The built-in `GET` handler responds with `200 OK` — keeping the function warm 
 
 Protect your webhook from unauthorized requests:
 
-**Step 1** — Set `WEBHOOK_SECRET` in Vercel env vars.
+**Step 1** - Set `WEBHOOK_SECRET` in Vercel env vars.
 
-**Step 2** — Register webhook with the secret:
+**Step 2** - Register webhook with the secret:
 
 ```
 https://api.telegram.org/bot<TOKEN>/setWebhook?url=https://yourapp.vercel.app/&secret_token=<SECRET>
 ```
 
-**Step 3** — Pass it to `handleVercel`:
+**Step 3** - Pass it to `handleVercel`:
 
 ```typescript
 export default handleVercel(bot, {
@@ -224,7 +224,7 @@ import {
 
 ## <img src="https://raw.githubusercontent.com/iSreyanshu/tgrammY/app/assets/turtle-banner.png" width="50" align="center" /> Using Extra Libraries
 
-The cleanest way to add extra Deno libraries is the **`deps.ts` pattern** — one central file for all your imports.
+The cleanest way to add extra Deno libraries is the **`deps.ts` pattern** - one central file for all your imports.
 
 ### Project structure with deps.ts
 
