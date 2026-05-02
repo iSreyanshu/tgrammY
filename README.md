@@ -239,21 +239,14 @@ bot/
 ### `deps.ts`
 
 ```typescript
-// ── tgrammY (Includes full grammY re-export) ──
 export * from "https://raw.githubusercontent.com/iSreyanshu/tgrammY/app/edge.ts";
 
-// ── grammY plugins ──
 export { Menu } from "https://deno.land/x/grammy_menu/mod.ts";
 export { conversations, createConversation, type ConversationFlavor } from "https://deno.land/x/grammy_conversations/mod.ts";
 export { limit } from "https://deno.land/x/grammy_ratelimiter/mod.ts";
 
-// ── Validation ──
 export { z } from "https://deno.land/x/zod/mod.ts";
-
-// ── HTTP Client ──
 export { default as axios } from "https://deno.land/x/axiod/mod.ts";
-
-// ── Utilities ──
 export { default as dayjs } from "https://deno.land/x/deno_dayjs/mod.ts";
 ```
 
