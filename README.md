@@ -63,7 +63,7 @@ bot.command("start", async (ctx) => {
 bot.on("message:text", (ctx) => ctx.reply(`You said: ${ctx.message.text}`));
 
 export default handleVercel(bot, {
-  secretToken: Deno.env.get("WEBHOOK_SECRET"), // optional but recommended
+  secretToken: Deno.env.get("WEBHOOK_SECRET"), // Optional but recommended
 });
 ```
 
