@@ -1,20 +1,6 @@
-/**
- * Example: tgrammY-edge bot on Vercel
- *
- * Deploy steps:
- *  1. Set BOT_TOKEN in Vercel project environment variables.
- *  2. (Optional) Set WEBHOOK_SECRET for extra security.
- *  3. Push to Vercel — done!
- */
-
-// ✅ Import everything from deps.ts — one place for all libraries
 import { createBotFromEnv, handleVercel, InlineKeyboard } from "../deps.ts";
 
-// ─── Bot setup ───────────────────────────────────────────────────────────────
-
-const bot = createBotFromEnv(); // reads BOT_TOKEN from env automatically
-
-// ─── Commands ────────────────────────────────────────────────────────────────
+const bot = createBotFromEnv();
 
 bot.command("start", async (ctx) => {
   const kb = new InlineKeyboard()
@@ -23,7 +9,7 @@ bot.command("start", async (ctx) => {
     .url("👨‍💻 Developer", "https://github.com/iSreyanshu");
 
   await ctx.reply(
-    `👋 *Welcome!*\n\nThis bot is running on *Vercel Edge* powered by *tgrammY* 🚀\n\nSend me any message and I'll echo it back.`,
+    `👋 *Welcome!* Bot is running on *Vercel* powered by *tgrammY*\n\nSend me any message and I'll echo it back.`,
     { parse_mode: "Markdown", reply_markup: kb },
   );
 });
@@ -31,9 +17,9 @@ bot.command("start", async (ctx) => {
 bot.command("help", async (ctx) => {
   await ctx.reply(
     `*Available Commands:*\n\n` +
-      `/start — Welcome message\n` +
-      `/help  — Show this help\n` +
-      `/ping  — Check bot latency`,
+      `/start - Welcome message\n` +
+      `/help - Show this help message\n` +
+      `/ping - Check bot latency`,
     { parse_mode: "Markdown" },
   );
 });
@@ -50,16 +36,12 @@ bot.command("ping", async (ctx) => {
   );
 });
 
-// ─── Message handler ─────────────────────────────────────────────────────────
-
 bot.on("message:text", async (ctx) => {
   await ctx.reply(`📨 You said: *${ctx.message.text}*`, {
     parse_mode: "Markdown",
   });
 });
 
-// ─── Export Vercel handler ────────────────────────────────────────────────────
-
 export default handleVercel(bot, {
-  secretToken: Deno.env.get("WEBHOOK_SECRET"), // optional but recommended
+  secretToken: Deno.env.get("WEBHOOK_SECRET"),
 });
