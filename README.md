@@ -92,7 +92,7 @@ https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=https://yourapp.verc
 
 ---
 
-## 📖 API Reference
+## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="50" align="center" /> API Reference
 
 ### `createBot(token, config?)`
 
@@ -150,7 +150,7 @@ export default handleVercel(bot, {
 
 ---
 
-## 💡 Health Check Response
+## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="50" align="center" /> Health Check Response
 
 Hitting your deployment URL with a `GET` request returns:
 
@@ -167,7 +167,7 @@ Hitting your deployment URL with a `GET` request returns:
 
 ---
 
-## ⏰ 24/7 Keep-Alive (Free)
+## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="50" align="center" /> 24/7 Keep-Alive (Free)
 
 Vercel serverless functions sleep after inactivity. Keep your bot always responsive:
 
@@ -179,7 +179,7 @@ The built-in `GET` handler responds with `200 OK` — keeping the function warm 
 
 ---
 
-## 🔐 Security: Secret Token
+## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="50" align="center" /> Security: Secret Token
 
 Protect your webhook from unauthorized requests:
 
@@ -203,7 +203,7 @@ tgrammY will automatically reject any request that doesn't include the correct `
 
 ---
 
-## 🧩 Full grammY Support
+## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="50" align="center" /> Full grammY Support
 
 tgrammY re-exports **everything** from grammY, so you can use the full API:
 
@@ -222,7 +222,7 @@ import {
 
 ---
 
-## 📦 Using Extra Libraries
+## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="50" align="center" /> Using Extra Libraries
 
 The cleanest way to add extra Deno libraries is the **`deps.ts` pattern** — one central file for all your imports.
 
@@ -290,7 +290,7 @@ import { createBotFromEnv, handleVercel, Menu, z, axios } from "../deps.ts";
 
 ---
 
-## 📁 Example Files
+## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="50" align="center" /> Example Files
 
 - [`example/deps.ts`](example/deps.ts) — Central dependency file (start here)
 - [`example/api/bot.ts`](example/api/bot.ts) — Full example bot
@@ -298,7 +298,7 @@ import { createBotFromEnv, handleVercel, Menu, z, axios } from "../deps.ts";
 
 ---
 
-## 📜 License
+## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="50" align="center" /> License
 
 [MIT](LICENSE) © [iSreyanshu](https://github.com/iSreyanshu)
 
