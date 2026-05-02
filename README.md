@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="80" align="center" />
-
 # grammY
 
 **The fastest way to run [grammY](https://grammy.dev) Telegram bots on [Vercel](https://vercel.com) powered by Deno Edge.**
@@ -16,7 +14,7 @@
 
 ---
 
-## 🚀 Quick Start
+## <img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="80" align="center" /> Quick Start
 
 ### 1. Project Structure
 
