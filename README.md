@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" alt="grammY" width="10%" />
+<img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" width="30" align="center" />
 
 # grammY
 
