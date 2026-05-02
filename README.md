@@ -253,7 +253,6 @@ export { default as dayjs } from "https://deno.land/x/deno_dayjs/mod.ts";
 ### `api/bot.ts`
 
 ```typescript
-// Everything comes from deps.ts
 import { createBotFromEnv, handleVercel, Menu, z, axios } from "../deps.ts";
 ```
 
