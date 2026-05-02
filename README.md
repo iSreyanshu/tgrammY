@@ -1,6 +1,6 @@
 <div align="center">
 
-# grammY
+# tgrammY
 
 **The fastest way to run [grammY](https://grammy.dev) Telegram bots on [Vercel](https://vercel.com) powered by Deno Edge.**
 
