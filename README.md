@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/banner.png" alt="tgrammY Banner" width="100%" />
+<img src="https://raw.githubusercontent.com/iSreyanshu/grammY/app/assets/turtle-banner.png" alt="grammY" width="100%" />
 
 # grammY
 
@@ -13,20 +13,6 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
 
 </div>
-
----
-
-## ✨ Why tgrammY?
-
-| Feature | tgrammY | Plain grammY |
-|---|---|---|
-| Zero config setup | ✅ | ❌ |
-| Vercel Edge ready | ✅ | Manual |
-| Built-in health check | ✅ | ❌ |
-| Secret token validation | ✅ | Manual |
-| `BOT_TOKEN` from env | ✅ | Manual |
-| Full grammY re-export | ✅ | — |
-| TypeScript generics | ✅ | ✅ |
 
 ---
 
