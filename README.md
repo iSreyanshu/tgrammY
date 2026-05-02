@@ -159,7 +159,7 @@ Hitting your deployment URL with a `GET` request returns:
   "status": "online",
   "engine": "tgrammY-edge",
   "version": "0.2.0",
-  "message": "Function is warm and ready!",
+  "message": "System ready!",
   "uptime": 1234.56,
   "timestamp": "2026-05-02T10:00:00.000Z"
 }
