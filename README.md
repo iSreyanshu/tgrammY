@@ -261,16 +261,16 @@ export { default as dayjs }              from "https://deno.land/x/deno_dayjs/mo
 ### `api/bot.ts`
 
 ```typescript
-// ✅ One import line — everything comes from deps.ts
+// Everything comes from deps.ts
 import { createBotFromEnv, handleVercel, Menu, z, axios } from "../deps.ts";
 ```
 
 **Why `deps.ts`?**
-- URLs live in **one place** — upgrade a library by changing one line
+- URLs live in **one place** - upgrade a library by changing one line
 - No duplicate URLs scattered across files
 - Easy to audit what your project depends on
 
-### Popular Deno-compatible Libraries
+### Popular Deno-compatible Libraries:
 
 | Library | Deno URL |
 |---|---|
